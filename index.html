@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forest Bird Pairing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Forest Bird Pairing</h1>
+    <div id="hud">
+      <span id="matched-count">Matched: 0 / 100</span>
+      <span id="mistake-count">Mistakes: 0</span>
+      <span id="timer">Time: 0:00</span>
+      <button id="restart-btn">Restart</button>
+    </div>
+  </header>
+  <p id="hint">Click a tree, then click the bird that matches its sign.</p>
+  <div id="viewport">
+    <div id="stage">
+      <div id="flash-overlay"></div>
+    </div>
+  </div>
+
+  <div id="win-modal" class="hidden">
+    <div class="win-box">
+      <div class="trophy">🏆</div>
+      <h2>You Win!</h2>
+      <p class="win-sub">All 20 species matched!</p>
+      <p id="win-stats"></p>
+      <button id="win-restart-btn">Play again</button>
+    </div>
+  </div>
+
+<script src="game.js"></script>
+</body>
+</html>
